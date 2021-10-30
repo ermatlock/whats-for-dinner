@@ -4,7 +4,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <header>
+      <div class=top-left>
+        <h1 class="top-title">What's for Dinner?</h1>
+      </div>
+      <div class=top-right>
+        <button class='add-recipe hidden'>ADD A RECIPE</button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="form">
+        <p class="main-prompt">What are you looking for?<span class="star"> *</span></p>
+        <input type="radio" name="choose-side" side="side">
+          <label for="choose-side">Side</label>
+        <input type="radio" name="choose-main" side="main">
+          <label for="choose-main">Main Dish</label>
+        <input type="radio" name="choose-dessert" side="main">
+          <label for="choose-dessert">Dessert</label>
+        <input type="radio" name="choose-entire" side="main">
+          <label for="choose-entire">Entire meal</label>
+        <button class='lets-cook'>LET'S COOK!</button>
+      </div>
+      <div class="box overlay"></div>
+      <div class="cook">
+        <img class="cookpot-graphic" src="./assets/cookpot.svg" alt="cookpot graphic">
+      </div>
+      <div class="box2 overlay"></div>
+    </div>
+    <background>
+      <img class="bg-image" src="./assets/burger-friends.jpg">
+    </background>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
