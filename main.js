@@ -1,10 +1,10 @@
 var choiceSide = document.getElementById("choice-side");
 var choiceMain = document.getElementById("choice-main");
 var choiceDessert = document.getElementById("choice-dessert");
-var letsCookButton = document.querySelector(".lets-cook");
 var cookpotGraphic = document.querySelector(".cookpot-graphic");
 var youShouldMake = document.querySelector(".you-should-make");
 var randomFood = document.querySelector(".random-food");
+var letsCookButton = document.querySelector(".lets-cook-button");
 var clearButton = document.querySelector(".clear-button");
 
 letsCookButton.addEventListener("click", letsCook);

@@ -1,131 +1,195 @@
+/* font-family: 'Roboto', sans-serif;
+
+COLORS
+teal - #0fb9b1;
+frosted white - rgba(225, 225, 225, .9);
+grey - #95a5a6;
+red - #ee5253
+
+*/
+
+/* 16x9 CSS   */
+html {
+  background: url(./assets/burger-friends.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: teal;
   margin: 0;
-}
-nav {
-  background-color: teal;
-  padding-bottom: 6vh;
+  overflow-y: hidden;
 }
 
-.top-left{
+nav {
+  background-color: teal;
+  padding-bottom: 8vh;
+}
+
+.top-left {
   float: left;
-  padding-left: 2%;
+  padding-left: 2vw;
 }
 
 .top-title {
   font-size: 3vh;
   font-weight: bold;
-  padding-right: 0%;
-  padding-top: 4%;
 }
 
-.top-right{
+.top-right {
   float: right;
   padding-right: 0%;
 }
 
-
 /* Buttons */
 .add-recipe {
-    background: rgba(225, 225, 225, .9);
-    border-color: #846a29;
-    border-radius: 5px;
-    height: 5vh;
+  background: rgba(225, 225, 225, .9);
+  border-color: #846a29;
+  border-radius: 5px;
+  height: 5vh;
 }
 
-.lets-cook {
-    text-align: center;
-    font-size: 3vh;
-    font-weight: bold;
-    background: teal;
-    border-color: #afafaf;
-    border-radius: 5px;
-    height: 8vh;
-    width: 26vh;
-    position: relative;
-    top: 12%;
-    left: 28%;
-}
 
 /* Main panel boxes */
 .container {
   display: flex;
+  /* white-space: nowrap; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.form-box {
+  display: flex;
+  vertical-align: middle;
+  width: 36vw;
+  height: 40vh;
+  background-color: rgba(225, 225, 225, .9);
+  font-size: 200%;
+  padding: 4%;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.lets-cook-button {
+  display: flex;
+  text-align: center;
+  font-size: 3vh;
+  font-weight: bold;
+  background: teal;
+  border-color: #afafaf;
+  border-radius: 7px;
+  padding: 3%;
+  /* height: 6vh; */
+  /* width: 17vw; */
+  position: relative;
+  top: 10%;
+  left: 0%;
+  align-content: center;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
+}
+
+form {flex-wrap: nowrap;/* display: flex; *//* top: 0vh; *//* left: -8vw; *//* flex-wrap: nowrap; *//* align-content: center; *//* justify-content: center; *//* align-items: center; *//* position: relative; *//* margin: 2%; */padding-right: 34%;}
+
+.main-prompt {
+  overflow-wrap: break-word;
+  /* display: flex; */
+  /* font-size: 4vh; */
+  /* margin-left: -4vw; */
+  /* flex-wrap: wrap; */
+  /* align-content: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+  /* flex-direction: row; */
+  /* padding-bottom: 0%; */
+}
+.star {
+  color: red;
+}
+
+
+
+.cookpot-graphic {
+  width: 46%;
+  /* height: 55%; */
+  position: relative;
+  top: 6%;
+  /* left: 21%; */
+}
+
+.you-should-make {
+  text-align: center;
+  /* font-size: 100%; */
+  font-style: italic;
+  position: relative;
+}
+
+.random-food {
+  text-align: center;
+  font-size: 99%;
+  font-style: bold;
+  position: relative;
+  top: -14%;
+}
+
+.clear-button {
+  text-align: center;
+  font-size: 69%;
+  font-weight: normal;
+  background: rgb(255 255 255 / 100%)fff4d4;
+  border-color: #ffffff;
+  border-radius: 6px;
+  padding: 1%;
+  /* height: 4vh; */
+  /* width: 10vh; */
+  position: relative;
+  top: 0%;
+  left: 40%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+.container {
+  display: flex;
   white-space: nowrap;
   width: 100%;
   height: 100%;
   position: absolute;
   margin: 0%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
 }
 
 .form-box {
+  display: flex;
   vertical-align: middle;
-  width: 40%;
-  height: 50%;
-  position: relative;
-  top: 12%;
-  left: -5%;
-  opacity: 0.85;
-  background: #ffffff;
-  font-size: 3vh;
+  width: 80vw;
+  height: 40vh;
+  /* background-color: rgba(225, 225, 225, .9); */
+  font-size: 191%;
+  padding: 3%;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
-form {
-  position: relative;
-  top: 7%;
-  left: 10%;
-}
-
-.main-prompt {
-  font-size: 4vh;
-  padding-left: 10%;
-  padding-top: 3%;
-  overflow-wrap: break-word;
-}
-.star {
-  color: red;
-}
-.radio{
-  size: 3vh
-
-}
-
-.overlay {
-  z-index: 9;
-  margin: 0px;
-  background: #ffffff;
-}
-
-.cook {
-  display:inline-block;
-  vertical-align:middle;
-  width: 40%;
-  height: 50%;
-  position: relative;
-  top: 12%;
-  left: 3%;
-  opacity: 0.85;
-  background: #ffffff;
-}
-
-.overlay2 {
-  z-index: 9;
-  margin: 0px;
-  background: #ffffff;
-}
-
-.cookpot-graphic {
-  display:inline-block;
-  vertical-align:middle;
-  width: 55%;
-  height: 55%;
-  position: relative;
-  top: 23%;
-  left: 21%;
-}
-
-.hidden {
-  display: none;
 }

@@ -5,17 +5,17 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <header>
+    <nav>
       <div class=top-left>
         <h1 class="top-title">What's for Dinner?</h1>
       </div>
       <div class=top-right>
         <button class='add-recipe hidden'>ADD A RECIPE</button>
       </div>
-    </header>
+    </nav>
     <div class="container">
-      <div class="form-box">
-        <p class="main-prompt">What are you looking for?<span class="star"> *</span></p>
+      <div class="form-box" id=choice-box>
+        <p class="main-prompt">What are you looking for?<span class="star">*</span></p>
         <form>
           <input type="radio" name="choice" id="choice-side">
             <label for="choice-side">Side</label><br>
@@ -24,20 +24,15 @@
           <input type="radio" name="choice" id="choice-dessert">
             <label for="choice-dessert">Dessert</label><br>
         </form>
-          <button class="lets-cook">LET'S COOK!</button>
+          <button class="lets-cook-button">LET'S COOK!</button>
       </div>
-    <div class="box overlay"></div>
-    <div class="cook">
+     <div class="form-box" id="cook-box">
         <img class="cookpot-graphic" src="./assets/cookpot.svg" alt="cookpot graphic">
-        <p class="you-should-make hidden">You should make</p><br>
-        <h1 class="random-food hidden">This Delicious Food!</h1>
+        <p class="you-should-make hidden">You should make:</p><br>
+        <h1 class="random-food hidden">Please make a selection!</h1>
         <button class="clear-button hidden">CLEAR</button>
       </div>
-    <div class="box2 overlay"></div>
-    </div>
-    <background>
-      <img class="bg-image" src="./assets/burger-friends.jpg">
-    </background>
+   </div>
     <script src="./data.js"></script>
     <script src="./main.js"></script>
   </body>
