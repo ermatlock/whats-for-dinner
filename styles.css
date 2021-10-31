@@ -1,52 +1,52 @@
+/* font-family: 'Roboto', sans-serif;
+
+COLORS
+teal - #0fb9b1;
+frosted white - rgba(225, 225, 225, .9);
+grey - #95a5a6;
+red - #ee5253
+
+*/
+html {
+  background: url(./assets/burger-friends.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: teal;
   margin: 0;
-}
-nav {
-  background-color: teal;
-  padding-bottom: 6vh;
+  overflow-y: hidden;
 }
 
-.top-left{
+nav {
+  background-color: teal;
+  padding-bottom: 8vh;
+}
+
+.top-left {
   float: left;
-  padding-left: 2%;
+  padding-left: 2vw;
 }
 
 .top-title {
   font-size: 3vh;
   font-weight: bold;
-  padding-right: 0%;
-  padding-top: 4%;
 }
 
-.top-right{
+.top-right {
   float: right;
   padding-right: 0%;
 }
 
-
 /* Buttons */
 .add-recipe {
-    background: rgba(225, 225, 225, .9);
-    border-color: #846a29;
-    border-radius: 5px;
-    height: 5vh;
+  background: rgba(225, 225, 225, .9);
+  border-color: #846a29;
+  border-radius: 5px;
+  height: 5vh;
 }
 
-.lets-cook {
-    text-align: center;
-    font-size: 3vh;
-    font-weight: bold;
-    background: teal;
-    border-color: #afafaf;
-    border-radius: 5px;
-    height: 8vh;
-    width: 26vh;
-    position: relative;
-    top: 12%;
-    left: 28%;
-}
 
 /* Main panel boxes */
 .container {
@@ -62,68 +62,89 @@ nav {
 
 .form-box {
   vertical-align: middle;
-  width: 40%;
-  height: 50%;
+  width: 36vw;
+  height: 40vh;
   position: relative;
   top: 12%;
-  left: -5%;
-  opacity: 0.85;
-  background: #ffffff;
+  left: -4%;
+  background-color: rgba(225, 225, 225, .9);
   font-size: 3vh;
+  padding: 3%;
+}
+
+.lets-cook-button {
+  text-align: center;
+  font-size: 3vh;
+  font-weight: bold;
+  background: teal;
+  border-width: 0%;
+  border-color: #afafaf;
+  border-radius: 5px;
+  height: 8vh;
+  width: 26vh;
+  position: relative;
+  top: 17%;
+  left: 28%;
 }
 
 form {
-  position: relative;
-  top: 7%;
-  left: 10%;
+  position: center;
+  top: 0vh;
+  left: 5vw;
 }
 
 .main-prompt {
   font-size: 4vh;
-  padding-left: 10%;
-  padding-top: 3%;
-  overflow-wrap: break-word;
 }
 .star {
   color: red;
 }
-.radio{
-  size: 3vh
 
-}
-
-.overlay {
-  z-index: 9;
-  margin: 0px;
-  background: #ffffff;
-}
-
-.cook {
-  display:inline-block;
-  vertical-align:middle;
-  width: 40%;
-  height: 50%;
+.cook-box {
+  background-color: rgba(225, 225, 225, .9);
+  width: 36vw;
+  height: 40vh;
   position: relative;
   top: 12%;
-  left: 3%;
-  opacity: 0.85;
-  background: #ffffff;
-}
-
-.overlay2 {
-  z-index: 9;
-  margin: 0px;
-  background: #ffffff;
+  left: 4%;
+  padding: 3%;
 }
 
 .cookpot-graphic {
-  display:inline-block;
-  vertical-align:middle;
   width: 55%;
   height: 55%;
   position: relative;
   top: 23%;
   left: 21%;
+}
+
+.you-should-make {
+  text-align: center;
+  font-size: 5vh;
+  font-style: italic;
+  position: relative;
+}
+
+.random-food {
+  text-align: center;
+  font-size: 5vh;
+  font-style: bold;
+  position: relative;
+  top: -10%
+}
+
+.clear-button {
+  text-align: center;
+  font-size: 2vh;
+  font-weight: normal;
+  background: rgb(255 255 255 / 100%)fff4d4;
+  border-color: #ffffff;
+  border-radius: 5px;
+  height: 4vh;
+  width: 10vh;
+  position: relative;
+  top: 10%;
+  left: 70%;
 }
 
 .hidden {
