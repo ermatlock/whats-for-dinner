@@ -1,31 +1,48 @@
+var choiceSide = document.getElementById("choice-side");
+var choiceMain = document.getElementById("choice-main");
+var choiceDessert = document.getElementById("choice-dessert");
 var letsCookButton = document.querySelector(".lets-cook");
-var chooseSide = document.querySelector(".choose-side");
-var chooseMain = document.querySelector(".choose-main");
-var chooseDessert = document.querySelector(".choose-dessert");
-var cookPot = document.querySelector(".cookpot-graphic")
+var cookpotGraphic = document.querySelector(".cookpot-graphic");
+var youShouldMake = document.querySelector(".you-should-make");
+var randomFood = document.querySelector(".random-food");
+var clearButton = document.querySelector(".clear-button");
 
+letsCookButton.addEventListener("click", letsCook);
+clearButton.addEventListener("click", clearResult);
 
-letsCookButton.addEventListener("click",letsCook);
+function show(element) {
+  element.classList.remove("hidden");
+};
 
-function showCookpot {
+function hide(element) {
+  element.classList.add("hidden");
+};
 
-}
-
-function hideCookpot {
-
-}
+function getRandom(array) {
+  return Math.floor(Math.random() * array.length);
+};
 
 function letsCook() {
-  if (chooseSide.checked){
-    outputFood.innertext = getRandomFood(sides);
-  }else if (chooseMain.checked){
-    outputFood.innertext = getRandomFood(mains);
-  }else if (chooseDessert.checked){
-    outputFood.innertext = getRandomFood(mains);
+  selectChoice();
+  hide(cookpotGraphic);
+  show(randomFood);
+  show(youShouldMake);
+  show(clearButton);
+};
+
+function clearResult() {
+  show(cookpotGraphic);
+  hide(randomFood);
+  hide(youShouldMake);
+  hide(clearButton);
+};
+
+function selectChoice(choice) {
+  if (choiceSide.checked) {
+  randomFood.innerText = `${sides[getRandom(sides)]}`;
+  } else if (choiceMain.checked) {
+  randomFood.innerText = `${mains[getRandom(mains)]}`;
+  } else if (choiceDessert.checked) {
+  randomFood.innerText = `${desserts[getRandom(desserts)]}`;
   }
-}
-
-
-function getRandomFood(array) {
-  return Math.floor(Math.random() * array.length);
 };
