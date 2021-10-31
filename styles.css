@@ -12,25 +12,20 @@ nav {
   float: left;
   padding-left: 2%;
 }
-.top-right{
-  float: right;
-  padding-right: 0%;
-}
+
 .top-title {
   font-size: 3vh;
   font-weight: bold;
   padding-right: 0%;
   padding-top: 4%;
 }
-.main-prompt {
-  font-size: 4vh;
-  padding-left: 10%;
-  padding-top: 3%;
-  overflow-wrap: break-word;
+
+.top-right{
+  float: right;
+  padding-right: 0%;
 }
-.star {
-  color: red;
-}
+
+
 /* Buttons */
 .add-recipe {
     background: rgba(225, 225, 225, .9);
@@ -83,7 +78,17 @@ form {
   left: 10%;
 }
 
-.radio-selector{
+.main-prompt {
+  font-size: 4vh;
+  padding-left: 10%;
+  padding-top: 3%;
+  overflow-wrap: break-word;
+}
+.star {
+  color: red;
+}
+.radio{
+  size: 3vh
 
 }
 

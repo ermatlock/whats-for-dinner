@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header>
@@ -16,24 +17,28 @@
       <div class="form-box">
         <p class="main-prompt">What are you looking for?<span class="star"> *</span></p>
         <form>
-          <input type="radio" name="choice" side="side">
-            <label for="choose-side">Side</label><br>
-          <input type="radio" name="choice" side="main">
-            <label for="choose-main">Main Dish</label><br>
-          <input type="radio" name="choice" side="dessert">
-            <label for="choose-dessert">Dessert</label><br>
+          <input type="radio" name="choice" id="choice-side">
+            <label for="choice-side">Side</label><br>
+          <input type="radio" name="choice" id="choice-main">
+            <label for="choice-main">Main Dish</label><br>
+          <input type="radio" name="choice" id="choice-dessert">
+            <label for="choice-dessert">Dessert</label><br>
         </form>
           <button class="lets-cook">LET'S COOK!</button>
-      </div>
-      <div class="box overlay"></div>
-      <div class="cook">
+    </div>
+    <div class="box overlay"></div>
+    <div class="cook">
         <img class="cookpot-graphic" src="./assets/cookpot.svg" alt="cookpot graphic">
+        <p class="you-should-make hidden">You should make</p><br>
+        <h1 class="random-food hidden">This Delicious Food!</h1>
+        <button class="clear-button hidden">CLEAR</button>
       </div>
-      <div class="box2 overlay"></div>
+    <div class="box2 overlay"></div>
     </div>
     <background>
       <img class="bg-image" src="./assets/burger-friends.jpg">
     </background>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
   </body>
-  <script type="text/javascript" src="main.js"></script>
 </html>
