@@ -14,8 +14,8 @@
       </div>
     </nav>
     <div class="container">
-      <div class="form-box">
-        <p class="main-prompt">What are you looking for?<span class="star"> *</span></p>
+      <div class="form-box" id=choice-box>
+        <p class="main-prompt">What are you looking for?<span class="star">*</span></p>
         <form>
           <input type="radio" name="choice" id="choice-side">
             <label for="choice-side">Side</label><br>
@@ -26,15 +26,13 @@
         </form>
           <button class="lets-cook-button">LET'S COOK!</button>
       </div>
-    <!-- <div class="box overlay"></div> -->
-    <div class="cook-box">
+     <div class="form-box" id="cook-box">
         <img class="cookpot-graphic" src="./assets/cookpot.svg" alt="cookpot graphic">
-        <p class="you-should-make hidden">You should make</p><br>
+        <p class="you-should-make hidden">You should make:</p><br>
         <h1 class="random-food hidden">Please make a selection!</h1>
         <button class="clear-button hidden">CLEAR</button>
       </div>
-    <!-- <div class="box2 overlay"></div> -->
-  </div>
+   </div>
     <script src="./data.js"></script>
     <script src="./main.js"></script>
   </body>
