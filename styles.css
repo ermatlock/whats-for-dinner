@@ -61,7 +61,7 @@ nav {
 }
 
 .form-box {
-  vertical-align:middle;
+  vertical-align: middle;
   width: 40%;
   height: 50%;
   position: relative;
@@ -125,7 +125,6 @@ form {
   top: 23%;
   left: 21%;
 }
-
 
 .hidden {
   display: none;
