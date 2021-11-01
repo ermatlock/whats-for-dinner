@@ -8,19 +8,19 @@ This site allows the user to select from a choice of sides, main dishes, and des
 
 Upon loading you are greeted with a streamlined page:
 
-![Load]https://user-images.githubusercontent.com/35410545/139617750-26bede60-8844-4e12-8a2d-b8b7d757a7b2.png
+![Load](https://user-images.githubusercontent.com/35410545/139617750-26bede60-8844-4e12-8a2d-b8b7d757a7b2.png)
 
 On the left hand side you can select from three choices: Sides, Main Dish, and Dessert. After choosing, click the let's cook button. You will see the loader as it comes up with a delicious meal, then a randomized result for that meal type. Let's try a side:
 
-![Sides]https://media.giphy.com/media/OYNG2oS6AKwin52nVo/giphy.gif
+![Sides](https://media.giphy.com/media/OYNG2oS6AKwin52nVo/giphy.gif)
 
 Now let's try a main dish:
 
-![Mains]https://media.giphy.com/media/YtgFJh4JrOKPEivSgE/giphy.gif
+![Mains](https://media.giphy.com/media/YtgFJh4JrOKPEivSgE/giphy.gif)
 
 Let's try a dessert:
 
-![Desserts]https://media.giphy.com/media/Jo2YU8qCVfTFiYW4dq/giphy.gif
+![Desserts](https://media.giphy.com/media/Jo2YU8qCVfTFiYW4dq/giphy.gif)
 
 Finally, the user can clear their result and start over at any time. if the user forgets to do so, no worries, it will simply update with a new meal.
 
