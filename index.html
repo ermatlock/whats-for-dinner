@@ -5,14 +5,9 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <nav>
-      <div class=top-left>
+    <header>
         <h1 class="top-title">What's for Dinner?</h1>
-      </div>
-      <div class=top-right>
-        <button class='add-recipe hidden'>ADD A RECIPE</button>
-      </div>
-    </nav>
+    </header>
     <div class="container">
       <div class="form-box" id=choice-box>
         <p class="main-prompt">What are you looking for?<span class="star">*</span></p>
@@ -27,9 +22,10 @@
           <button class="lets-cook-button">LET'S COOK!</button>
       </div>
      <div class="form-box" id="cook-box">
+        <div class="loader hidden"></div>
         <img class="cookpot-graphic" src="./assets/cookpot.svg" alt="cookpot graphic">
         <p class="you-should-make hidden">You should make:</p><br>
-        <h1 class="random-food hidden">Please make a selection!</h1>
+        <h1 class="random-food hidden">Please make a <br>selection on the left!</h1>
         <button class="clear-button hidden">CLEAR</button>
       </div>
    </div>

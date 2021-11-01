@@ -6,6 +6,7 @@ var youShouldMake = document.querySelector(".you-should-make");
 var randomFood = document.querySelector(".random-food");
 var letsCookButton = document.querySelector(".lets-cook-button");
 var clearButton = document.querySelector(".clear-button");
+var loader = document.querySelector(".loader")
 
 letsCookButton.addEventListener("click", letsCook);
 clearButton.addEventListener("click", clearResult);
@@ -18,16 +19,33 @@ function hide(element) {
   element.classList.add("hidden");
 };
 
+function fadeIn(element) {
+  element.classList.add('fade-in');
+  element.classList.remove('hidden');
+}
+
 function getRandom(array) {
   return Math.floor(Math.random() * array.length);
 };
 
 function letsCook() {
+  clearResult();
   selectChoice();
   hide(cookpotGraphic);
-  show(randomFood);
-  show(youShouldMake);
-  show(clearButton);
+  show(loader);
+  runTimer()
+};
+
+function showFood() {
+  hide(cookpotGraphic);
+  hide(loader);
+  fadeIn(randomFood);
+  fadeIn(youShouldMake);
+  fadeIn(clearButton);
+}
+
+function runTimer() {
+  setTimeout(function(){showFood()}, 1000);
 };
 
 function clearResult() {
@@ -46,3 +64,10 @@ function selectChoice(choice) {
   randomFood.innerText = `${desserts[getRandom(desserts)]}`;
   }
 };
+
+// function cookTimer(){
+  // setTimeout(, 3000);
+// }
+// function showTimer() {
+//
+// }
