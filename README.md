@@ -1,23 +1,58 @@
-# What's for Dinner?
+# What's For Dinner? A random meal generator with an emphasis on responsive design.
 
-## Overview
+# Description
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+This site allows the user to select from a choice of sides, main dishes, and desserts. Just click the "let's cook" button and receive a random food you can either prepare or dream about! The browser window is also fully scaleable and will switch over to a mobile arrangement for portrait aspect devices.
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+## Getting Started
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
+Upon loading you are greeted with a streamlined page:
 
-## Learning Goals
+![Load]https://user-images.githubusercontent.com/35410545/139617750-26bede60-8844-4e12-8a2d-b8b7d757a7b2.png
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+On the left hand side you can select from three choices: Sides, Main Dish, and Dessert. After choosing, click the let's cook button. You will see the loader as it comes up with a delicious meal, then a randomized result for that meal type. Let's try a side:
 
-## Setup
+![Sides]https://media.giphy.com/media/OYNG2oS6AKwin52nVo/giphy.gif
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+Now let's try a main dish:
+
+![Mains]https://media.giphy.com/media/YtgFJh4JrOKPEivSgE/giphy.gif
+
+Let's try a dessert:
+
+![Desserts]https://media.giphy.com/media/Jo2YU8qCVfTFiYW4dq/giphy.gif
+
+Finally, the user can clear their result and start over at any time. if the user forgets to do so, no worries, it will simply update with a new meal.
+
+# Future features
+
+- Entire Meal Functionality
+- Error Handling and Clear Button (this feature was partially addressed but more time needed to execute)
+- User can add a recipe
+- Login Page
+- User can favorite a recipe
+- User can delete a recipe
+- User never sees a repeated recipe
+- All recipes interface
+- Local Storage
+
+# Technologies
+
+- HTML
+- CSS
+- JavaScript
+
+# Links:
+
+- Deploy link: [https://ermatlock.github.io/whats-for-dinner/](https://ermatlock.github.io/whats-for-dinner/)
+- Repository: [https://github.com/ermatlock/whats-for-dinner](https://github.com/ermatlock/whats-for-dinner)
+
+# Contributors
+
+Eric Matlock - [https://github.com/ermatlock](https://github.com/ermatlock)
+
+## Acknowledgments
+
+Original repository and assets provided by Turing School of Software and Design
+
+CSS loader wheel provided by W3 Schools

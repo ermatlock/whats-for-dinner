@@ -64,10 +64,3 @@ function selectChoice(choice) {
   randomFood.innerText = `${desserts[getRandom(desserts)]}`;
   }
 };
-
-// function cookTimer(){
-  // setTimeout(, 3000);
-// }
-// function showTimer() {
-//
-// }
