@@ -19,6 +19,11 @@ function hide(element) {
   element.classList.add("hidden");
 };
 
+function fadeIn(element) {
+  element.classList.add('fade-in');
+  element.classList.remove('hidden');
+}
+
 function getRandom(array) {
   return Math.floor(Math.random() * array.length);
 };
@@ -34,9 +39,9 @@ function letsCook() {
 function showFood() {
   hide(cookpotGraphic);
   hide(loader);
-  show(randomFood);
-  show(youShouldMake);
-  show(clearButton);
+  fadeIn(randomFood);
+  fadeIn(youShouldMake);
+  fadeIn(clearButton);
 }
 
 function runTimer() {
